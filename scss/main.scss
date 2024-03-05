@@ -10,6 +10,8 @@ body {
 	background-color: #dddddd;
 }
 
+/* nawigacja */
+
 .nav {
 	background-color: #292929;
 	color: #fff;
@@ -77,6 +79,43 @@ ul {
 		li:nth-child(6) {
 			animation-delay: 1.1s;
 		}
+	}
+}
+
+// header
+
+.header-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 300px;
+	background-image: url('../img/planeta.jpg');
+	background-position: 0 55%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.header-text {
+		color: #fff;
+		z-index: 1;
+
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		p {
+			margin-top: 5px;
+			font-size: 13px;
+		}
+	}
+
+	.header-bg {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(104, 129, 241, 0.4);
+		z-index: 0;
 	}
 }
 
