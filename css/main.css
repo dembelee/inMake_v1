@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  font-family: "Ubuntu", "sans-serif";
+  font-family: "Montserrat", "sans-serif";
   background-color: #dddddd;
 }
 
@@ -26,6 +26,7 @@ ul {
   display: inline-block;
   height: 80px;
   width: 300px;
+  text-transform: uppercase;
   line-height: 80px;
   cursor: pointer;
   transition: background-color 0.4s;
@@ -38,6 +39,8 @@ ul {
 .dropdown {
   position: absolute;
   width: 300px;
+  text-transform: capitalize;
+  z-index: 10;
 }
 .dropdown li {
   display: none;
@@ -46,7 +49,7 @@ ul {
   opacity: 0;
 }
 .dropdown li:hover {
-  color: tomato;
+  color: rgb(84, 118, 221);
 }
 
 .menu-item:hover {
@@ -101,6 +104,133 @@ ul {
   width: 100%;
   background-color: rgba(104, 129, 241, 0.4);
   z-index: 0;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us .about-us-title {
+  margin-top: 40px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+}
+.about-us .about-us-underline {
+  margin-bottom: 40px;
+  height: 3px;
+  width: 50px;
+  background: rgb(84, 118, 221);
+}
+.about-us .about-us-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 30px;
+  height: 300px;
+  width: 55%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  color: #fff;
+}
+.about-us .top {
+  position: relative;
+  background-image: url("../img/coffee.jpg");
+}
+.about-us .top .about-us-bg {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+.about-us .top .about-us-text {
+  padding: 40px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  z-index: 2;
+}
+.about-us .top .about-us-text h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.about-us .middle {
+  position: relative;
+  background-image: url("../img/phone.jpg");
+}
+.about-us .middle .about-us-bg {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+.about-us .middle .about-us-text {
+  padding: 40px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  z-index: 2;
+}
+.about-us .middle .about-us-text h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.about-us .bottom {
+  position: relative;
+  background-image: url("../img/sth.jpg");
+}
+.about-us .bottom .about-us-bg {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+.about-us .bottom .about-us-text {
+  padding: 40px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  z-index: 2;
+}
+.about-us .bottom .about-us-text h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+footer {
+  height: 80px;
+  line-height: 80px;
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+footer a {
+  margin: 3px;
+  color: #fff;
+  transition: color 0.4s;
+}
+footer a:hover {
+  color: rgb(84, 118, 221);
 }
 
 @keyframes menu1 {
