@@ -45,10 +45,14 @@ ul {
 .dropdown li {
   display: none;
   background-color: rgb(112, 112, 112);
-  transition: color 0.4s;
   opacity: 0;
 }
-.dropdown li:hover {
+.dropdown li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.4s;
+}
+.dropdown li a:hover {
   color: rgb(84, 118, 221);
 }
 
@@ -123,6 +127,42 @@ ul {
   height: 3px;
   width: 50px;
   background: rgb(84, 118, 221);
+}
+.about-us .main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .main-box ol li {
+  font-size: 20px;
+  margin: 20px;
+}
+.about-us .table-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-us .table-box table {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 35%;
+  border: 1px solid black;
+}
+.about-us .table-box tr,
+.about-us .table-box th {
+  padding: 10px;
+  border: 1px solid black;
+}
+.about-us .contact-box {
+  margin: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.about-us .contact-box p i {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 26px;
 }
 .about-us .about-us-body {
   display: flex;
